@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Hangman Game!!</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Metal+Mania|Nosifer" rel="stylesheet">
+	
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center margin-bottom background-image">
+				<h1>Heavy Metal</h1>
+				<h2>Hangman!!</h2>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3"></div>
+			<div class="col-lg-3 dotBorder">
+				<img id="pic" class="img img-responsive" src="https://t2.rbxcdn.com/567fb0693b8062552cc7348286cb9328">
+				<audio id="song" src=""></audio>
+				<br>
+				<br>
+				<div class="text-center">
+				<button type="button" onclick="button()"  class="btn btn-danger text-center">My Poor Ears!!</button>
+				</div>
+				<br>
+				<br>
+				<div class="text-center">
+				<button type="button" onclick="button1()"  class="btn btn-danger text-center">Nevermind... I'm cool!!</button>
+				</div>
+
+				
+				
+			</div>
+			<div class="col-lg-3 text-center dotBorder">
+				<p id="PressK">Press any key to get started!!</p>
+				
+				<br>
+				<br>
+				
+				<p id="test">Wins:</p>
+				<p id="wins"></p>
+				
+				<br>
+				<br>
+
+				<p>Current Word:</p>
+				<div id="cw"></div>
+
+				<br>
+				<br>
+
+				<p>Number of Guesses Remaining:</p>
+				<p id="gRemaining"></p>
+
+				<br>
+				<br>
+
+				<p>Letters Already Guessed:</p>
+				<p id="letterGuessed"></p>
+				
+			</div>
+			<div class="col-lg-3"></div>
+		</div>
+	</div>
+
+</body>
+<script src="assets/javascript/game.js"></script>
+</html>
